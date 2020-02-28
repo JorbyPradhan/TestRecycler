@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Form"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorAccent"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Enter Email Or Phone"
+            android:layout_margin="10dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:id="@+id/edt_registerMail"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            app:boxStrokeColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Enter Password"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            app:hintAnimationEnabled="false"
+            android:textColorHint="@android:color/black"
+            app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:paddingLeft="10dp"
+                android:id="@+id/edt_reg_pass"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            app:boxStrokeColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Enter Confirm Password"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            app:hintAnimationEnabled="false"
+            android:textColorHint="@android:color/black"
+            app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:paddingLeft="10dp"
+                android:id="@+id/edt_con_pass"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Register"
+            android:id="@+id/btn_register"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+</LinearLayout>
